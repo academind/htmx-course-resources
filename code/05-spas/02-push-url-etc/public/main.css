@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#18171a, #28262d);
+  color: #f3e7d4;
+  min-height: 100vh;
+}
+
+#main-header {
+  align-items: center;
+  padding: 3rem 15%;
+}
+
+#main-title a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#main-title img {
+  width: 5rem;
+  margin-right: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #edbf68;
+  text-shadow: 0 0 4px rgba(35, 34, 34, 0.4);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#shop {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+#shop h2 {
+  font-size: 1.5rem;
+  color: #a59b8b;
+  text-transform: uppercase;
+}
+
+#products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.product {
+  height: 100%;
+  background: #5f4e33;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product-content {
+  flex: 1;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-content h3 {
+  font-size: 1.25rem;
+  color: #fbd392;
+  margin-bottom: 0.15rem;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #d1b68b;
+  margin: 0;
+}
+
+#product {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: linear-gradient(#0f0e0d, #22211e);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#product header {
+  display: flex;
+  gap: 3rem;
+}
+
+#product img {
+  width: 17.5rem;
+  border-radius: 8px;
+}
+
+#product h1 {
+  font-size: 2rem;
+}
+
+#product-price {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#product form {
+  margin-top: 1.5rem;
+}
+
+#product form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #fbd392;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#product form button:hover {
+  background: #f9ac4f;
+}
+
+#product-description {
+  margin: 3rem auto;
+  font-size: 1.5rem;
+}

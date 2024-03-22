@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  /* background-color: #333236; */
+  background: linear-gradient(#121214, #272629);
+  color: #d0cfd6;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 6px;
+  padding: 3rem 4rem;
+  margin: 5rem auto;
+  background-color: #b8b4c3;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+form img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+  filter: drop-shadow(0 0 6px rgba(30, 30, 32, 0.3));
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: bold;
+  color: #46454a;
+}
+
+form input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #d9d7df;
+  color: #46454a;
+}
+
+form button {
+  width: 100%;
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #4b34a9;
+  color: #d0cfd6;
+  border-radius: 3px;
+}
+
+form button:hover,
+form button:active {
+  background-color: #432aa3;
+}
+
+form a {
+  color: #564f6e;
+  text-decoration: none;
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+form a:hover {
+  color: #4b34a9;
+}
+
+.error {
+  color: #a21d4c;
+}
+
+#form-errors {
+  margin: 1rem;
+  list-style: disc;
+  color: #a21d4c;
+}

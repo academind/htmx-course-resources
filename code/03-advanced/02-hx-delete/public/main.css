@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#231e21, #191416);
+  color: #eee7ea;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  max-width: 60rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: #b8b4bd;
+  color: #191416;
+  min-height: 85vh;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: #2b292e;
+  font-size: 0.9rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+form input {
+  font: inherit;
+  border: none;
+  background-color: #f4f2f7;
+  color: #151416;
+  padding: 0.5rem 0.25rem;
+  width: 20rem;
+  border-radius: 4px;
+}
+
+form button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #35056b;
+  color: white;
+  border-radius: 4px;
+}
+
+form button:hover,
+form button:active {
+  background-color: #4c0899;
+}
+
+#goals {
+  margin: 2rem 0;
+}
+
+#goals li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #272529;
+  color: #e8e4ed;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#goals li span {
+  font-weight: bold;
+}
+
+#goals li button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f667af;
+  color: #141213;
+  border-radius: 4px;
+}
+
+#goals li button:hover,
+#goals li button:active {
+  background-color: #f6459d;
+}

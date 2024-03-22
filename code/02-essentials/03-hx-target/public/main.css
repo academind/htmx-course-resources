@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#121214, #272629);
+  color: #c2c1c6;
+  min-height: 100vh;
+}
+
+main,
+#main-header {
+  width: 90%;
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+
+#main-header {
+  display: flex;
+  gap: 2rem;
+}
+
+#main-header img {
+  height: 3rem;
+  border-radius: 8rem;
+}
+
+#main-header h1 {
+  margin: auto 0;
+}
+
+main button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #576ae6;
+  color: #fff;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: #354bdd;
+}
+
+main li {
+  margin: 1rem 0;
+}
+
+main form {
+  width: 90%;
+  max-width: 20rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+main p:has(input) {
+  flex: 1;
+}
+
+main label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #919095;
+}
+
+main input {
+  display: block;
+  font: inherit;
+  width: 100%;
+}
