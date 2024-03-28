@@ -22,11 +22,7 @@ app.get('/', (req, res) => {
       <main>
         <h1>Manage your course goals</h1>
         <section>
-          <form 
-            id="goal-form" 
-            hx-post="/goals" 
-            hx-target="#goals"
-            hx-swap="beforeend">
+          <form id="goal-form">
             <div>
               <label htmlFor="goal">Goal</label>
               <input type="text" id="goal" name="goal" />
@@ -43,24 +39,12 @@ app.get('/', (req, res) => {
               <button>Remove</button>
             </li>
           `
-          ).join('')}
+          )}
           </ul>
         </section>
       </main>
     </body>
   </html>
-  `);
-});
-
-app.post('/goals', (req, res) => {
-  const goalText = req.body.goal;
-  courseGoals.push(goalText);
-  // res.redirect('/');
-  res.send(`
-    <li id="goal-${courseGoals.length - 1}">
-      <span>${goalText}</span>
-      <button>Remove</button>
-    </li>
   `);
 });
 
