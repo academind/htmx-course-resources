@@ -72,6 +72,14 @@ form button:active {
   background-color: #4c0899;
 }
 
+form button:disabled,
+form button:disabled:hover,
+form button:disabled:active {
+  background-color: #7e7b7b;
+  color: #474444;
+  cursor: not-allowed;
+}
+
 #goals {
   margin: 2rem 0;
 }
